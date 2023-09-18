@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col gap-4">
     <!-- <InfoMentee v-if="mentee" :mentee="mentee" /> -->
-    <form>
-      <!-- v-if="mentee"
+    <form
+      v-if="mentee"
       @submit="addMeeting"
       class="flex flex-col lg:mx-auto lg:items-center gap-2 p-2 rounded-md bg-zinc-200 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-6xl shadow-md w-full"
     >
@@ -20,7 +20,7 @@
         class="bg-nitMaroon-600 text-white rounded-md p-2 w-12"
       >
         Add
-      </button> -->
+      </button>
 
       <div style="padding:0;margin:none;overflow-x: hidden;position: absolute; top:0;left:50%;transform:translate(-50%,0)">
         <!-- first page -->
@@ -1082,7 +1082,7 @@
   </div>
 </template>
 
-<!-- <script setup lang="ts">
+<script setup lang="ts">
 definePageMeta({
   middleware: ["level1"],
 });
@@ -1114,7 +1114,7 @@ const addMeeting = async (e: Event) => {
     },
   });
 };
-</script> -->
+</script>
 <!-- first page -->
 <!-- Begin shared CSS values -->
 <style class="shared-css" type="text/css">
